@@ -24,7 +24,7 @@ yarn deploy
 
 ## 例子
 
-- 接口请求，请求方法参考 [axios]('https://github.com/axios/axios'),只是编写了拦截器 
+- 接口请求，请求方法参考 [axios](https://github.com/axios/axios),只是编写了拦截器 
 ```
     try {
         const auth = await this.$api.post('/api/app-user/auth-by-password', {
