@@ -1,0 +1,100 @@
+body,
+ul,
+ol,
+li,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+form,
+fieldset,
+table,
+td,
+img,
+div,
+dl,
+dt,
+dd,
+input,
+p,
+a,
+section,
+figure,
+figcaption,
+hgroup,
+pre,
+i,
+header,
+button,
+span,
+textarea {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  word-break: break-all;
+}
+
+html,
+body,
+#app {
+  height: 100%;
+  font-family: OpenSans, OpenSans-Regular;
+  font-size: 12px;
+  -webkit-tap-highlight-color: transparent;
+  -webkit-font-smoothing: antialiased;
+}
+
+h1,
+h2,
+h3,
+h4 {
+  font-weight: normal;
+}
+
+ul,
+ol {
+  list-style: none;
+}
+
+a {
+  color: inherit;
+  -webkit-tap-highlight-color: transparent;
+  text-decoration: none !important;
+}
+
+img {
+  font-size: 0;
+}
+
+input,
+button {
+  -webkit-appearance: none;
+  border: none;
+  outline: none;
+  background-color: transparent;
+}
+
+textarea {
+  font-family: OpenSans, OpenSans-Regular;
+}
+
+button {
+  user-select: none;
+}
+
+pre {
+  white-space: pre-wrap;
+  font-family: OpenSans, OpenSans-Regular;
+}
+
+i {
+  font-style: normal;
+}
+
+.ellipsis {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}

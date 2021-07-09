@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" href="/favicon.ico" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no" />
+    <script src="https://apis.google.com/js/platform.js?onload=init" async defer></script>
+    <script async defer crossorigin="anonymous" src="https://connect.facebook.net/en_US/sdk.js"></script>
+    <title>Gosund Authorization</title>
+  </head>
+  <style>
+    #ready-loading-full{position:fixed;top:0;left:0;right:0;bottom:0;background:#fff;z-index:1000000}
+    #ready-loading-full>div{width:100%;height:100%;position:relative}
+    #ready-loading-full>div>div{position:absolute;left:50%;top:50%;transform: translate(-50%,-50%);}
+    .loader{flex:0 1 auto;-ms-flex-direction:column;flex-direction:column;-ms-flex-positive:1;flex-grow:1;-ms-flex-negative:0;flex-shrink:0;-ms-flex-preferred-size:25%;flex-basis:25%;max-width:25%;-ms-flex-align:center;align-items:center;-ms-flex-pack:center;justify-content:center}@-webkit-keyframes line-scale{0%{-webkit-transform:scaley(1);transform:scaley(1)}50%{-webkit-transform:scaley(0.4);transform:scaley(0.4)}100%{-webkit-transform:scaley(1);transform:scaley(1)}}@keyframes line-scale{0%{-webkit-transform:scaley(1);transform:scaley(1)}50%{-webkit-transform:scaley(0.4);transform:scaley(0.4)}100%{-webkit-transform:scaley(1);transform:scaley(1)}}.line-scale>div:nth-child(1){-webkit-animation:line-scale 1s -0.4s infinite cubic-bezier(0.2,0.68,0.18,1.08);animation:line-scale 1s -0.4s infinite cubic-bezier(0.2,0.68,0.18,1.08)}.line-scale>div:nth-child(2){-webkit-animation:line-scale 1s -0.3s infinite cubic-bezier(0.2,0.68,0.18,1.08);animation:line-scale 1s -0.3s infinite cubic-bezier(0.2,0.68,0.18,1.08)}.line-scale>div:nth-child(3){-webkit-animation:line-scale 1s -0.2s infinite cubic-bezier(0.2,0.68,0.18,1.08);animation:line-scale 1s -0.2s infinite cubic-bezier(0.2,0.68,0.18,1.08)}.line-scale>div:nth-child(4){-webkit-animation:line-scale 1s -0.1s infinite cubic-bezier(0.2,0.68,0.18,1.08);animation:line-scale 1s -0.1s infinite cubic-bezier(0.2,0.68,0.18,1.08)}.line-scale>div:nth-child(5){-webkit-animation:line-scale 1s 0s infinite cubic-bezier(0.2,0.68,0.18,1.08);animation:line-scale 1s 0s infinite cubic-bezier(0.2,0.68,0.18,1.08)}.line-scale>div{background-color:#0BD087;width:4px;height:35px;border-radius:2px;margin:2px;-webkit-animation-fill-mode:both;animation-fill-mode:both;display:inline-block}
+  </style>
+  <body>
+    <div id="ready-loading-full">
+      <div>
+        <div class="loader">
+          <div class="line-scale">
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div id="app"></div>
+    <script type="module" src="/src/main.js"></script>
+  </body>
+</html>
